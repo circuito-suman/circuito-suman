@@ -42,6 +42,7 @@ Here are some ideas to get you started:
 
 ### 😂 Random Dev Meme
 <img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
+<img src='http://http://dev-memer.info/' title="Meme" alt="Please refresh the page if the meme doesn't show up.">
 
 ---
 [![](https://visitcount.itsvg.in/api?id=circuito-suman&icon=2&color=11)](https://visitcount.itsvg.in)
