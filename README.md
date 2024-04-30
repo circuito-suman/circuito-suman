@@ -1,21 +1,5 @@
 ### Hi there 👋
 
-<!--
-**circuito-suman/circuito-suman** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-
 # 💫 About Me:
 🎓 CSE student | <br>💻 Coding and Electronics Enthusiast | <br>🌐 Web Dev Explorer | <br>🚀 Actively learning, coding, and exploring new tech |<br>💬 Open to collaboration | <br>🔭Currently working on Hardware Hacking | <br>⚡ Fun fact: A Programmer is not a PC repair person |
 <br>
@@ -39,10 +23,6 @@ Here are some ideas to get you started:
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=circuito-suman&limit=5&theme=algolia&combine_all_yearly_contributions=true)
-
-### 😂 Random Dev Meme
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
-<img src='http://http://dev-memer.info/' title="Meme" alt="Please refresh the page if the meme doesn't show up.">
 
 ---
 [![](https://visitcount.itsvg.in/api?id=circuito-suman&icon=2&color=11)](https://visitcount.itsvg.in)
