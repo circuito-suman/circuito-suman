@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 # 💫 About Me:
-🎓 CSE student | <br>💻 Coding and Electronics Enthusiast | <br>🌐 Web Dev Explorer | <br>🚀 Actively learning, coding, and exploring new tech |<br>💬 Open to collaboration | <br>🔭Currently working on Hardware Hacking | <br>⚡ Fun fact: A Programmer is not a PC repair person |
+🎓 CSE student | <br>💻 Coding and Electronics Enthusiast | <br>🚀 Actively learning, coding, and exploring new tech |<br>💬 Open to collaboration | <br>🔭Currently working on Hardware Hacking | <br>⚡ Fun fact: A Programmer is not a PC repair person |
 <br>
 
 
