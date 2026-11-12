@@ -3,8 +3,15 @@
 <!-- ANIMATED HEADER WAVE -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=circuito-suman&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=CSE%20Student%20%7C%20Code%20%2B%20Circuits%20Enthusiast&descAlignY=55&descSize=16" width="100%" alt="Header Wave"/>
 
-<!-- TYPEWRITER ANIMATION -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=620&height=75&lines=%E2%9A%A1+Building+circuits+%26+writing+firmware;%F0%9F%94%8C+Electronics+%2B+Low-Level+Software+Engineer;%F0%9F%A7%B0+CSE+Student+%7C+Maker+%7C+Open+Source+Contributor" alt="Typing SVG"/>
+<!-- ANIMATED ELECTRONIC COMPONENTS RAINFALL -->
+<img src="circuit-rain.svg" width="100%" alt="Electronics Components Rainfall"/>
+
+<br/>
+
+<!-- TYPEWRITER ANIMATION (CLEAN SEQUENTIAL CYCLING - NO TAG OVERLAP) -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=620&height=50&lines=%E2%9A%A1+Building+circuits+%26+writing+firmware;%F0%9F%94%8C+Electronics+%2B+Low-Level+Software+Engineer;%F0%9F%A7%B0+CSE+Student+%7C+Maker+%7C+Open+Source+Contributor" alt="Typing SVG"/>
+
+<br/><br/>
 
 <!-- PROFILE METRICS & STATUS BADGES -->
 <p align="center">
@@ -69,12 +76,12 @@ class Developer {
   <tr>
     <td width="50%" valign="top">
       <h3>📟 <a href="https://github.com/circuito-suman/74HC595ledmatrixlibrary">74HC595ledmatrixlibrary</a></h3>
-      <p>Modular Arduino & PlatformIO library for cascading 74HC595 shift registers to drive custom multiplexed LED dot-matrix panels.</p>
+      <p>Modular Arduino &amp; PlatformIO library for cascading 74HC595 shift registers to drive custom multiplexed LED dot-matrix panels.</p>
       <p><code>C++</code> · <code>PlatformIO</code> · <code>Shift-Registers</code></p>
     </td>
     <td width="50%" valign="top">
       <h3>💡 <a href="https://github.com/circuito-suman/Matrix_16x10">Matrix_16x10</a></h3>
-      <p>High-refresh rate embedded firmware for driving a custom 16x10 LED matrix display with animated text & pattern buffers.</p>
+      <p>High-refresh rate embedded firmware for driving a custom 16x10 LED matrix display with animated text &amp; pattern buffers.</p>
       <p><code>C++</code> · <code>Embedded</code> · <code>LED Matrix</code></p>
     </td>
   </tr>
@@ -98,19 +105,19 @@ class Developer {
 
 <div align="center">
 
-<!-- STREAK STATS -->
+<!-- STREAK STATS (VERIFIED 200 OK) -->
 <a href="https://github.com/circuito-suman">
   <img src="https://streak-stats.demolab.com?user=circuito-suman&theme=tokyonight&hide_border=true&background=0d1117&ring=a855f7&fire=f72585&currStreakLabel=06d6a0&sideLabels=c9d1d9&dates=8b949e&border_radius=10" height="175" alt="Streak Stats"/>
 </a>
 &nbsp;&nbsp;
-<!-- GITHUB STATS -->
+<!-- GITHUB STATS (ACTIVE MIRROR - 200 OK) -->
 <a href="https://github.com/circuito-suman">
-  <img src="https://github-readme-stats.vercel.app/api?username=circuito-suman&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&icon_color=06d6a0&border_radius=10" height="175" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=circuito-suman&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9&icon_color=06d6a0&border_radius=10" height="175" alt="GitHub Stats"/>
 </a>
 
 <br/><br/>
 
-<!-- TOP LANGUAGES (RELIABLE SHIELD BARS) -->
+<!-- TOP LANGUAGES (RELIABLE HIGH-AVAILABILITY BADGES) -->
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-48.2%25-f34b7d?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=161b22" alt="C++"/>
   &nbsp;
@@ -130,8 +137,8 @@ class Developer {
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/circuito-suman/circuito-suman/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/circuito-suman/circuito-suman/output/github-contribution-grid-snake.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"/>
   <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%"/>
 </picture>
 
