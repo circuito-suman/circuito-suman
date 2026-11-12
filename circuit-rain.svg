@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="240">
+  <defs>
+    <!-- Deep Space Gradient Background -->
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0c1120"/>
+      <stop offset="100%" stop-color="#080c16"/>
+    </linearGradient>
+
+    <!-- Glow Filter for LEDs & Traces -->
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      /* Fall Animations at variable speeds and stagger delays */
+      @keyframes rainFall1 {
+        0% { transform: translateY(-50px) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.95; }
+        90% { opacity: 0.95; }
+        100% { transform: translateY(280px) rotate(15deg); opacity: 0; }
+      }
+      @keyframes rainFall2 {
+        0% { transform: translateY(-50px) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.85; }
+        90% { opacity: 0.85; }
+        100% { transform: translateY(280px) rotate(-20deg); opacity: 0; }
+      }
+      @keyframes rainFall3 {
+        0% { transform: translateY(-50px) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.9; }
+        90% { opacity: 0.9; }
+        100% { transform: translateY(280px) rotate(35deg); opacity: 0; }
+      }
+      @keyframes pulseVia {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes ledBlink {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+      }
+
+      .f1 { animation: rainFall1 4.5s linear infinite; }
+      .f2 { animation: rainFall2 5.8s linear infinite 1.2s; }
+      .f3 { animation: rainFall3 3.9s linear infinite 2.4s; }
+      .f4 { animation: rainFall1 6.2s linear infinite 0.7s; }
+      .f5 { animation: rainFall2 5.0s linear infinite 3.1s; }
+      .f6 { animation: rainFall3 4.2s linear infinite 1.8s; }
+      .f7 { animation: rainFall1 5.4s linear infinite 2.8s; }
+      .f8 { animation: rainFall2 6.5s linear infinite 0.3s; }
+      .f9 { animation: rainFall3 4.8s linear infinite 3.6s; }
+
+      .trace { stroke: rgba(168, 85, 247, 0.22); stroke-width: 1.2; fill: none; }
+      .via { fill: #fbbf24; animation: pulseVia 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" rx="12" fill="url(#bgG)" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Static PCB Grid & Copper Traces -->
+  <g opacity="0.3">
+    <!-- Grid -->
+    <path d="M 0,40 H 850 M 0,80 H 850 M 0,120 H 850 M 0,160 H 850 M 0,200 H 850" stroke="#334155" stroke-width="0.5" stroke-dasharray="2,8"/>
+    <path d="M 85,0 V 240 M 170,0 V 240 M 255,0 V 240 M 340,0 V 240 M 425,0 V 240 M 510,0 V 240 M 595,0 V 240 M 680,0 V 240 M 765,0 V 240" stroke="#1e293b" stroke-width="0.5" stroke-dasharray="2,8"/>
+    
+    <!-- Top Left Trace -->
+    <path class="trace" d="M 30,30 L 100,30 L 120,50 L 220,50" />
+    <circle class="via" cx="30" cy="30" r="3"/>
+    <circle class="via" cx="220" cy="50" r="3"/>
+
+    <!-- Bottom Right Trace -->
+    <path class="trace" d="M 620,190 L 720,190 L 750,220 L 820,220" />
+    <circle class="via" cx="620" cy="190" r="3"/>
+    <circle class="via" cx="820" cy="220" r="3"/>
+  </g>
+
+  <!-- Central Glass Banner -->
+  <g transform="translate(425, 120)">
+    <rect x="-210" y="-38" width="420" height="76" rx="12" fill="#0d1326" stroke="#a855f7" stroke-width="1.5" opacity="0.95"/>
+    <text text-anchor="middle" y="-4" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" letter-spacing="2" filter="url(#glowPurple)">
+      ⚡ CIRCUITO-SUMAN ⚡
+    </text>
+    <text text-anchor="middle" y="22" fill="#06d6a0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="1.5">
+      HARDWARE &bull; EMBEDDED FIRMWARE &bull; OPEN SOURCE
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FALLING ELECTRONICS LAYER (ANIMATED SVGS)   -->
+  <!-- ========================================== -->
+
+  <!-- 1. ATmega328P DIP-16 Microchip -->
+  <g class="f1" transform="translate(60, 0)">
+    <!-- Pins -->
+    <rect x="-22" y="-15" width="6" height="3" fill="#94a3b8"/>
+    <rect x="-22" y="-7" width="6" height="3" fill="#94a3b8"/>
+    <rect x="-22" y="1" width="6" height="3" fill="#94a3b8"/>
+    <rect x="-22" y="9" width="6" height="3" fill="#94a3b8"/>
+    <rect x="16" y="-15" width="6" height="3" fill="#94a3b8"/>
+    <rect x="16" y="-7" width="6" height="3" fill="#94a3b8"/>
+    <rect x="16" y="1" width="6" height="3" fill="#94a3b8"/>
+    <rect x="16" y="9" width="6" height="3" fill="#94a3b8"/>
+    <!-- Body -->
+    <rect x="-16" y="-20" width="32" height="38" rx="2" fill="#0f172a" stroke="#a855f7" stroke-width="1.2"/>
+    <circle cx="-10" cy="-14" r="1.5" fill="#a855f7"/>
+    <text x="0" y="3" text-anchor="middle" fill="#c084fc" font-family="monospace" font-size="7" font-weight="bold">ATmega</text>
+  </g>
+
+  <!-- 2. 10k Resistor with Color Bands -->
+  <g class="f2" transform="translate(130, 0)">
+    <line x1="0" y1="-26" x2="0" y2="-12" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="0" y1="12" x2="0" y2="26" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="-6" y="-12" width="12" height="24" rx="2" fill="#d4b185" stroke="#78350f" stroke-width="0.8"/>
+    <rect x="-6" y="-8" width="12" height="2.5" fill="#8B4513"/>
+    <rect x="-6" y="-3" width="12" height="2.5" fill="#000000"/>
+    <rect x="-6" y="2" width="12" height="2.5" fill="#FF8C00"/>
+    <rect x="-6" y="7" width="12" height="2" fill="#FFD700"/>
+  </g>
+
+  <!-- 3. Glowing Green 5mm LED -->
+  <g class="f3" transform="translate(200, 0)">
+    <line x1="-2" y1="8" x2="-2" y2="22" stroke="#94a3b8" stroke-width="1.2"/>
+    <line x1="2" y1="8" x2="2" y2="18" stroke="#94a3b8" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="7.5" fill="#10b981" filter="url(#glowGreen)"/>
+    <rect x="-7.5" y="6" width="15" height="2" fill="#047857"/>
+    <circle cx="-2" cy="-2" r="2" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- 4. Mini Green PCB with Gold Traces -->
+  <g class="f4" transform="translate(260, 0)">
+    <rect x="-16" y="-12" width="32" height="24" rx="2" fill="#064e3b" stroke="#047857" stroke-width="1"/>
+    <path d="M -10,-6 L 0,-6 L 8,2 L 8,6" stroke="#fbbf24" stroke-width="1.2" fill="none"/>
+    <circle cx="-10" cy="-6" r="1.5" fill="#fbbf24"/>
+    <circle cx="8" cy="6" r="1.5" fill="#fbbf24"/>
+  </g>
+
+  <!-- 5. 74HC595 Shift Register IC -->
+  <g class="f5" transform="translate(580, 0)">
+    <rect x="-20" y="-18" width="5" height="3" fill="#94a3b8"/>
+    <rect x="-20" y="-10" width="5" height="3" fill="#94a3b8"/>
+    <rect x="-20" y="-2" width="5" height="3" fill="#94a3b8"/>
+    <rect x="-20" y="6" width="5" height="3" fill="#94a3b8"/>
+    <rect x="-20" y="14" width="5" height="3" fill="#94a3b8"/>
+    <rect x="15" y="-18" width="5" height="3" fill="#94a3b8"/>
+    <rect x="15" y="-10" width="5" height="3" fill="#94a3b8"/>
+    <rect x="15" y="-2" width="5" height="3" fill="#94a3b8"/>
+    <rect x="15" y="6" width="5" height="3" fill="#94a3b8"/>
+    <rect x="15" y="14" width="5" height="3" fill="#94a3b8"/>
+    <rect x="-15" y="-22" width="30" height="44" rx="2" fill="#090d16" stroke="#06d6a0" stroke-width="1.2"/>
+    <circle cx="-9" cy="-17" r="1.5" fill="#06d6a0"/>
+    <text x="0" y="3" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="6.5" font-weight="bold">74HC595</text>
+  </g>
+
+  <!-- 6. Ceramic Disc Capacitor (104) -->
+  <g class="f6" transform="translate(650, 0)">
+    <line x1="-3" y1="7" x2="-3" y2="24" stroke="#94a3b8" stroke-width="1.2"/>
+    <line x1="3" y1="7" x2="3" y2="24" stroke="#94a3b8" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="8" fill="#ea580c" stroke="#9a3412" stroke-width="0.8"/>
+    <text x="0" y="3" text-anchor="middle" fill="#431407" font-family="monospace" font-size="6.5" font-weight="bold">104</text>
+  </g>
+
+  <!-- 7. Glowing Blue Electrolytic Capacitor -->
+  <g class="f7" transform="translate(710, 0)">
+    <line x1="-3" y1="10" x2="-3" y2="24" stroke="#94a3b8" stroke-width="1.2"/>
+    <line x1="3" y1="10" x2="3" y2="20" stroke="#94a3b8" stroke-width="1.2"/>
+    <rect x="-8" y="-12" width="16" height="22" rx="2" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="1" y="-12" width="6" height="22" fill="#e2e8f0"/>
+    <rect x="-8" y="-12" width="16" height="2.5" fill="#94a3b8"/>
+  </g>
+
+  <!-- 8. 16.000 MHz Crystal Oscillator -->
+  <g class="f8" transform="translate(770, 0)">
+    <line x1="-4" y1="8" x2="-4" y2="20" stroke="#94a3b8" stroke-width="1.2"/>
+    <line x1="4" y1="8" x2="4" y2="20" stroke="#94a3b8" stroke-width="1.2"/>
+    <rect x="-13" y="-8" width="26" height="16" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="1"/>
+    <text x="0" y="2" text-anchor="middle" fill="#0f172a" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="bold">16.000</text>
+  </g>
+
+  <!-- 9. Hex / Signal Code (VCC / 0x3F) -->
+  <g class="f9" transform="translate(820, 0)">
+    <text x="0" y="0" fill="#a855f7" font-family="monospace" font-size="9" font-weight="bold" filter="url(#glowPurple)">
+      0x5A_GND
+    </text>
+  </g>
+</svg>
